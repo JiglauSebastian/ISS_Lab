@@ -14,12 +14,12 @@ A simplified library management system designed strictly for end-users, allowing
 
 ## Features
 
-### F1. Authentication
+### F1. Data Management (CRUD)
+- **Books & Persons:** Basic Create, Read, Update, and Delete operations to manage book records and user accounts within the application.
+
+### F2. Authentication
 - **Login:** Users must log in with their credentials to access the library catalog and their personal profile.
 - **Logout:** Users can securely end their active session.
-
-### F2. Data Management (CRUD)
-- **Books & Persons:** Basic Create, Read, Update, and Delete operations to manage book records and user accounts within the application.
 
 ### F3. Catalog & Sorting
 - **View Books:** Users can browse the library's catalog.
@@ -34,10 +34,7 @@ A simplified library management system designed strictly for end-users, allowing
 - **Delay Tracking:** If a user returns a book after the due date, their `delays` counter increases by 1.
 - **Borrowing Ban:** If a user accumulates more than 2 delays (`delays > 2`), they are added to a Blacklist. Blacklisted users are permanently blocked from borrowing new books.
 
-### F6. User Profile
-- **Current Status:** Displays the currently borrowed book (if any) and the remaining days until the due date.
-- **Reading History:** Shows a comprehensive list of all previously borrowed books.
-- **Account Standing:** Displays the current number of delays and notifies the user if they are on the Blacklist.
-
-### F7. Book Import
+### F6. Book Import
 - **File Import:** The book inventory can be easily populated or updated by importing external files (e.g., CSV or JSON formats).
+
+##Non-Functional Requirements
