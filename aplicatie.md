@@ -32,9 +32,11 @@ A simplified library management system designed strictly for end-users, allowing
 
 ### F5. Blacklist System
 - **Delay Tracking:** If a user returns a book after the due date, their `delays` counter increases by 1.
-- **Borrowing Ban:** If a user accumulates more than 2 delays (`delays > 2`), they are added to a Blacklist. Blacklisted users are permanently blocked from borrowing new books.
+- **Borrowing Ban:** If a user accumulates more than 2 delays (`delays > 2`), they are added to a Blacklist. Blacklisted users are blocked for a period of 6 months from borrowing new books.
 
 ### F6. Book Import
 - **File Import:** The book inventory can be easily populated or updated by importing external files (e.g., CSV or JSON formats).
 
 ## Non-Functional Requirements
+-
+-
