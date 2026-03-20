@@ -27,7 +27,7 @@ A simplified library management system designed strictly for end-users, allowing
 
 ### F4. Book Rental
 - **Single Book Limit:** A user can only borrow a maximum of **1 book** at any given time.
-- **Fixed Period:** Books are rented for a predefined, fixed period.
+- **Fixed Period:** Books are rented for a period of 2 weeks.
 - **Validation:** The system blocks the rental action if the user already has an active borrowed book.
 
 ### F5. Blacklist System
