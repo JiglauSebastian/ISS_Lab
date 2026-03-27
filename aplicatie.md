@@ -9,7 +9,8 @@ A simplified library management system designed strictly for end-users, allowing
 ## Entities (Data Model)
 
 - **Book:** `id`, `title`, `author`, `isBorrowed` (boolean), `category`
-- **Person (User):** `id`, `name`, `borrowedBook` (link to Book), `delays` (count of late returns)
+- **Person (User):** `cnp`, `name`, `borrowedBook` (link to Book), `delays` (count of late returns)
+- **Admin:** 'username', 'password', 'name', 'oras' 
 - **Rental (Transaction):** `id`, `person_id`, `book_id`, `borrow_date`, `due_date`, `return_date`
 
 ## Features
