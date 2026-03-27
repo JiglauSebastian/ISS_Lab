@@ -19,12 +19,12 @@ A simplified library management system designed strictly for end-users, allowing
 - **Books & Persons:** Basic Create, Read, Update, and Delete operations to manage book records and user accounts within the application.
 
 ### F2. Authentication
-- **Login:** Users must log in with their credentials to access the library catalog and their personal profile.
-- **Logout:** Users can securely end their active session.
+- **Login:** Admins must log in with their credentials to access the library catalog and users personal profile.
+- **Logout:** Admin can securely end their active session.
 
 ### F3. Catalog & Sorting
-- **View Books:** Users can browse the library's catalog.
-- **Sorting & Filtering:** Users can sort and filter the book list by current status (available/borrowed) and by specific categories or genres.
+- **View Books:** Admin can browse the library's catalog.
+- **Sorting & Filtering:** Admin can sort and filter the book list by current status (available/borrowed) and by specific categories or genres.
 
 ### F4. Book Rental
 - **Single Book Limit:** A user can only borrow a maximum of **1 book** at any given time.
