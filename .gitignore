@@ -1,0 +1,22 @@
+# Fisiere generate de IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.workspace
+
+# Fisiere de build Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
+
+# Baza de date locala
+*.db
+*.sqlite
+slim_library.db
+
+# Fisiere de sistem
+.DS_Store
+Thumbs.db

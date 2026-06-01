@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.slim.ui.LoginController"
+            styleClass="root-pane" prefWidth="900" prefHeight="600">
+
+    <center>
+        <VBox alignment="CENTER" spacing="0" styleClass="login-card">
+            <padding><Insets top="50" right="50" bottom="50" left="50"/></padding>
+
+            <Label text="📚" styleClass="login-icon"/>
+            <Label text="SLIM" styleClass="login-title"/>
+            <Label text="Library Management System" styleClass="login-subtitle"/>
+
+            <VBox spacing="6" style="-fx-padding: 30 0 0 0;">
+                <Label text="Username" styleClass="field-label"/>
+                <TextField fx:id="usernameField" promptText="Enter username" styleClass="text-field-slim"/>
+
+                <Label text="Password" styleClass="field-label" style="-fx-padding: 12 0 0 0;"/>
+                <PasswordField fx:id="passwordField" promptText="Enter password" styleClass="text-field-slim"/>
+
+                <Label fx:id="errorLabel" styleClass="error-label" visible="false" managed="false"/>
+
+                <Button text="Login" onAction="#handleLogin" styleClass="btn-primary"
+                        maxWidth="Infinity" style="-fx-padding: 12 0 12 0; -fx-font-size: 14px;"/>
+            </VBox>
+
+            <Separator style="-fx-padding: 20 0 10 0;"/>
+            <Label text="User Lookup" styleClass="section-title-small" style="-fx-padding: 10 0 6 0;"/>
+            <HBox spacing="8" alignment="CENTER_LEFT">
+                <TextField fx:id="cnpField" promptText="Enter CNP" styleClass="text-field-slim" HBox.hgrow="ALWAYS"/>
+                <Button text="View Profile" onAction="#handleUserLookup" styleClass="btn-secondary"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

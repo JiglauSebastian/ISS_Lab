@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.slim.ui.UserProfileController"
+            styleClass="root-pane" prefWidth="900" prefHeight="680">
+
+    <top>
+        <HBox styleClass="top-bar" alignment="CENTER_LEFT" spacing="16">
+            <padding><Insets top="14" right="20" bottom="14" left="20"/></padding>
+            <Label text="📚 SLIM" styleClass="top-bar-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="← Back" onAction="#handleBack" styleClass="btn-secondary"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="16" styleClass="content-area">
+            <padding><Insets top="24" right="30" bottom="24" left="30"/></padding>
+
+            <Label fx:id="userNameLabel" styleClass="section-title"/>
+
+            <HBox spacing="16">
+                <VBox spacing="6" styleClass="card" HBox.hgrow="ALWAYS">
+                    <Label text="ACCOUNT STATUS" styleClass="card-label"/>
+                    <Label fx:id="delaysLabel" styleClass="field-label"/>
+                    <Label fx:id="blacklistLabel" styleClass="field-label"/>
+                </VBox>
+                <VBox spacing="6" styleClass="card" HBox.hgrow="ALWAYS">
+                    <Label text="CURRENT RENTAL" styleClass="card-label"/>
+                    <Label fx:id="currentBookLabel" styleClass="field-label"/>
+                    <Label fx:id="dueDateLabel" styleClass="field-label"/>
+                    <Label fx:id="daysRemainingLabel" styleClass="field-label"/>
+                </VBox>
+            </HBox>
+
+            <Label text="Reading History" styleClass="section-title"/>
+
+            <TableView fx:id="historyTable" VBox.vgrow="ALWAYS" styleClass="table-slim">
+                <columns>
+                    <TableColumn fx:id="bookTitleCol" text="Book" prefWidth="260"/>
+                    <TableColumn fx:id="bookAuthorCol" text="Author" prefWidth="160"/>
+                    <TableColumn fx:id="borrowDateCol" text="Borrowed" prefWidth="120"/>
+                    <TableColumn fx:id="dueDateCol" text="Due Date" prefWidth="120"/>
+                    <TableColumn fx:id="returnDateCol" text="Returned" prefWidth="120"/>
+                    <TableColumn fx:id="statusCol" text="Status" prefWidth="100"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+    </center>
+</BorderPane>
